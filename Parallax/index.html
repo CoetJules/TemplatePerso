@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" /
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Parallax Scrolling website</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <header id="header">
+      <a href="#" class="logo">Arrakis</a>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Donate</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </header>    
+    <section id="scene">
+      <h2 id="text">Arrakeen</h2>
+      <img src="01.png" id="img1" />
+      <img src="02.png" id="img2" />
+      <img src="03.png" id="img3" />
+      <img src="04.png" id="img4" />
+    </section>
+    <div class="sec">
+      <h2>Parallax Scrolling effects</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi hic illum
+        eius dolorem, dicta ad, earum repudiandae aspernatur eum minima magni,
+        accusamus porro repellat itaque! Id dolorem harum vel facere architecto
+        ullam, in labore optio consequatur voluptatum nihil eum possimus beatae
+        quibusdam soluta. Repellat, doloremque nulla assumenda libero minima non
+        dicta corrupti tenetur molestias fugiat, ducimus reprehenderit ullam
+        ratione amet, culpa alias sequi vitae beatae! Tempore, animi. </br></br> Illo
+        neque, nostrum dolore a placeat impedit corporis? Tempore earum
+        perferendis labore necessitatibus, cupiditate voluptate corporis vero
+        perspiciatis quas? Ratione neque sint architecto qui magnam debitis
+        quaerat? Saepe nobis iure quia! Tempore consequuntur quis numquam quos,
+        ut velit corporis nobis odio nihil animi. Molestias similique minima
+        voluptatem nihil facilis molestiae, sit et cupiditate eum delectus iste,
+        aperiam voluptatum odio. Dolore, quibusdam officia sit optio quaerat
+        consequuntur iste vitae voluptatibus asperiores nulla ipsa iure
+        blanditiis, dolorem soluta tenetur fugit? Adipisci, ratione! Adipisci
+        deleniti a, molestias laboriosam ea eum odit nostrum quod voluptates
+        quam laborum accusamus vero excepturi ab beatae cupiditate nihil est vel
+        assumenda ipsum iste? Voluptatem quaerat alias nulla distinctio amet
+        vitae quae voluptates rerum cumque incidunt, qui iusto, tenetur, sunt
+        quia reiciendis consequuntur. </br></br>Earum officia mollitia exercitationem,
+        consequatur sint aperiam beatae delectus dolorem quaerat reprehenderit
+        natus sequi aliquid vitae ipsa maxime ea sunt accusamus. Recusandae
+        debitis incidunt saepe eos reiciendis exercitationem et perspiciatis
+        similique? Natus repudiandae ratione mollitia, autem ex, voluptatibus
+        esse alias magni sapiente nemo animi debitis quasi architecto, iusto
+        quae vel soluta facilis. Mollitia quod distinctio necessitatibus tempora
+        provident officiis unde minima, et molestias consequatur?
+        Necessitatibus, debitis! Quis dolor mollitia quaerat ab tempore nulla
+        cum doloremque voluptatibus unde quia. Excepturi porro ea cupiditate.
+        Cupiditate voluptate aperiam quam, voluptatem commodi totam molestiae
+        repellendus nesciunt, libero nostrum magnam facilis quod laudantium unde
+        vitae ad quae nihil, ipsum excepturi praesentium ipsam et eum!
+      </p>
+    </div>
+    <script>
+        let text = document.getElementById('text');
+        let img1 = document.getElementById('img1');
+        let img2 = document.getElementById('img2');
+        let img3 = document.getElementById('img3');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            text.style.marginTop = value * -1.5+'px';
+            img1.style.top = value * 0.75+'px';
+            img2.style.top = value * 0.5+'px';
+            img3.style.top = value * 0.25+'px';
+        })
+    </script>
+  </body>
+</html>
